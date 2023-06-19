@@ -14,6 +14,5 @@ const selectors = {
 selectors.button.addEventListener('click', handlerClick);
 
 function handlerClick() {
-  selectors.body.style.backgroundColor = getRandomHexColor();
-  selectors.span.textContent = getRandomHexColor();
+  selectors.body.style.backgroundColor = selectors.span.textContent = getRandomHexColor();
 };
